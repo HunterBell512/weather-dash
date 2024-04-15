@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <title>Weather Dash</title>
+    </head>
+    <body>
+        <section class="hero has-text-centered mgb-large">
+            <div class="hero-body">
+                <p class="title has-text-white has-text-weight-bold is-size-1">
+                    Weather Dash
+                </p>
+            </div>
+        </section>
+        <main class="columns m-3">
+            <div class="column is-one-fifth search-form-column">
+                <div class="is-full search-form">
+                    <p class="is-size-3">Search for a City:</p>
+                    <form id="searchForm">
+                        <div class="control">
+                            <input type="text" class="input is-rounded is-size-4" placeholder="San Diego" id="searchBar">
+                        </div>
+                        <div class="control">
+                            <button type="submit" class="button has-text-centered is-size-4 is-fullwidth" id="submitBtn">Search</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="" id="history"></div>
+            </div>
+            <div class="column is-four-fifths">
+                <div id="city-info">
+                    <p class="has-text-weight-bold is-size-2" id="city-name">City</p>
+                    <p class="is-size-4 m-3" id="temp">
+                        Temp: 
+                    </p>
+                    <p class="is-size-4 m-3" id="wind">
+                        Wind: 
+                    </p>
+                    <p class="is-size-4 m-3" id="humidity">
+                        Humidity: 
+                    </p>
+                </div>
+                <h2 class="has-text-weight-bold is-size-3">5-Day Forecast:</h2>
+                <div id="forecast" class="columns">
+                    <div class="container column is-2">
+                        <p class="has-text-weight-bold is-size-4">
+                            Date
+                        </p>
+                        <p class="is-size-5 m-3">
+                            Temp: 
+                        </p>
+                        <p class="is-size-5 m-3">
+                            Wind: 
+                        </p>
+                        <p class="is-size-5 m-3">
+                            Humidity: 
+                        </p>
+                    </div>
+                    <div class="container column is-2">
+                        <p class="has-text-weight-bold is-size-4">
+                            Date
+                        </p>
+                        <p class="is-size-5 m-3">
+                            Temp: 
+                        </p>
+                        <p class="is-size-5 m-3">
+                            Wind: 
+                        </p>
+                        <p class="is-size-5 m-3">
+                            Humidity: 
+                        </p>
+                    </div>
+                    <div class="container column is-2">
+                        <p class="has-text-weight-bold is-size-4">
+                            Date
+                        </p>
+                        <p class="is-size-5 m-3">
+                            Temp: 
+                        </p>
+                        <p class="is-size-5 m-3">
+                            Wind: 
+                        </p>
+                        <p class="is-size-5 m-3">
+                            Humidity: 
+                        </p>
+                    </div>
+                    <div class="container column is-2">
+                        <p class="has-text-weight-bold is-size-4">
+                            Date
+                        </p>
+                        <p class="is-size-5 m-3">
+                            Temp: 
+                        </p>
+                        <p class="is-size-5 m-3">
+                            Wind: 
+                        </p>
+                        <p class="is-size-5 m-3">
+                            Humidity: 
+                        </p>
+                    </div>
+                    <div class="container column is-2">
+                        <p class="has-text-weight-bold is-size-4">
+                            Date
+                        </p>
+                        <p class="is-size-5 m-3">
+                            Temp: 
+                        </p>
+                        <p class="is-size-5 m-3">
+                            Wind: 
+                        </p>
+                        <p class="is-size-5 m-3">
+                            Humidity: 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js" integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
+        <script src="./assets/scripts/script.js"></script>
+    </body>
+</html>

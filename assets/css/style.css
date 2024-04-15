@@ -1,0 +1,32 @@
+.search-form-column * {
+    padding-top: 5px;
+    padding-bottom: 5px
+}
+
+.search-form {
+    border-bottom: 1px solid black
+}
+
+#city-info {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 1rem
+}
+
+.container {
+    color: white;
+    background-color: #3256a8;
+    margin: 1.2rem;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.hero {
+    background-color: #233e7a;
+}
+
+.historyBtn {
+    margin-top: 5px;
+    margin-bottom: 5px
+}
