@@ -17,7 +17,7 @@ const handleSubmit = async (search) => {
     }
 
     const key = 'c490fc1c501f72d32157933ec3a3fb5d';
-    const getCoordinates = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${key}`);
+    const getCoordinates = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${key}`);
     const coordinateData = await getCoordinates.json();
 
     const url = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${coordinateData[0].lat}&lon=${coordinateData[0].lon}&units=imperial&exclude=hourly,minute&appid=${key}`);
